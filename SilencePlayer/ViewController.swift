@@ -8,20 +8,37 @@
 
 import Cocoa
 
+var soundPlayer: SoundPlayer?
+
 class ViewController: NSViewController {
+    
+    @IBOutlet weak var nowPlayingLabel: NSTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
         }
     }
 
-
+    @IBAction func playButtonClicked(_ sender: Any) {
+        if (soundPlayer != nil) {
+            if (soundPlayer!.stop()) {
+                let btn = sender as! NSButton
+                btn.title = "Play silence"
+                nowPlayingLabel.stringValue = "- - -"
+                return
+            }
+        }
+        else {
+            soundPlayer = SoundPlayer()
+        }
+        soundPlayer!.playSound(file: "silence", ext: "mp3")
+        let btn = sender as! NSButton
+        btn.title = "Stop it"
+        nowPlayingLabel.stringValue = "Now playing silence"
+    }
 }
 

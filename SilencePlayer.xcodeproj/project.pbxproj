@@ -11,26 +11,9 @@
 		099BD47F20811CE50083937F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BD47E20811CE50083937F /* ViewController.swift */; };
 		099BD48120811CE70083937F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099BD48020811CE70083937F /* Assets.xcassets */; };
 		099BD48420811CE70083937F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099BD48220811CE70083937F /* Main.storyboard */; };
-		099BD49020811CE70083937F /* SilencePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BD48F20811CE70083937F /* SilencePlayerTests.swift */; };
-		099BD49B20811CE70083937F /* SilencePlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BD49A20811CE70083937F /* SilencePlayerUITests.swift */; };
+		099BD4A9208121540083937F /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BD4A8208121540083937F /* SoundPlayer.swift */; };
+		099BD4AB20812AD50083937F /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 099BD4AA20812AD40083937F /* silence.mp3 */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		099BD48C20811CE70083937F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 099BD47120811CE40083937F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 099BD47820811CE40083937F;
-			remoteInfo = SilencePlayer;
-		};
-		099BD49720811CE70083937F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 099BD47120811CE40083937F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 099BD47820811CE40083937F;
-			remoteInfo = SilencePlayer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		099BD47920811CE40083937F /* SilencePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilencePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,30 +23,12 @@
 		099BD48320811CE70083937F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		099BD48520811CE70083937F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		099BD48620811CE70083937F /* SilencePlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilencePlayer.entitlements; sourceTree = "<group>"; };
-		099BD48B20811CE70083937F /* SilencePlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilencePlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		099BD48F20811CE70083937F /* SilencePlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilencePlayerTests.swift; sourceTree = "<group>"; };
-		099BD49120811CE70083937F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		099BD49620811CE70083937F /* SilencePlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SilencePlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		099BD49A20811CE70083937F /* SilencePlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilencePlayerUITests.swift; sourceTree = "<group>"; };
-		099BD49C20811CE70083937F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		099BD4A8208121540083937F /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		099BD4AA20812AD40083937F /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		099BD47620811CE40083937F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		099BD48820811CE70083937F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		099BD49320811CE70083937F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,9 +41,8 @@
 		099BD47020811CE40083937F = {
 			isa = PBXGroup;
 			children = (
+				099BD4AA20812AD40083937F /* silence.mp3 */,
 				099BD47B20811CE40083937F /* SilencePlayer */,
-				099BD48E20811CE70083937F /* SilencePlayerTests */,
-				099BD49920811CE70083937F /* SilencePlayerUITests */,
 				099BD47A20811CE40083937F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,8 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				099BD47920811CE40083937F /* SilencePlayer.app */,
-				099BD48B20811CE70083937F /* SilencePlayerTests.xctest */,
-				099BD49620811CE70083937F /* SilencePlayerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,26 +64,9 @@
 				099BD48220811CE70083937F /* Main.storyboard */,
 				099BD48520811CE70083937F /* Info.plist */,
 				099BD48620811CE70083937F /* SilencePlayer.entitlements */,
+				099BD4A8208121540083937F /* SoundPlayer.swift */,
 			);
 			path = SilencePlayer;
-			sourceTree = "<group>";
-		};
-		099BD48E20811CE70083937F /* SilencePlayerTests */ = {
-			isa = PBXGroup;
-			children = (
-				099BD48F20811CE70083937F /* SilencePlayerTests.swift */,
-				099BD49120811CE70083937F /* Info.plist */,
-			);
-			path = SilencePlayerTests;
-			sourceTree = "<group>";
-		};
-		099BD49920811CE70083937F /* SilencePlayerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				099BD49A20811CE70083937F /* SilencePlayerUITests.swift */,
-				099BD49C20811CE70083937F /* Info.plist */,
-			);
-			path = SilencePlayerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,42 +89,6 @@
 			productReference = 099BD47920811CE40083937F /* SilencePlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		099BD48A20811CE70083937F /* SilencePlayerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 099BD4A220811CE70083937F /* Build configuration list for PBXNativeTarget "SilencePlayerTests" */;
-			buildPhases = (
-				099BD48720811CE70083937F /* Sources */,
-				099BD48820811CE70083937F /* Frameworks */,
-				099BD48920811CE70083937F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				099BD48D20811CE70083937F /* PBXTargetDependency */,
-			);
-			name = SilencePlayerTests;
-			productName = SilencePlayerTests;
-			productReference = 099BD48B20811CE70083937F /* SilencePlayerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		099BD49520811CE70083937F /* SilencePlayerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 099BD4A520811CE70083937F /* Build configuration list for PBXNativeTarget "SilencePlayerUITests" */;
-			buildPhases = (
-				099BD49220811CE70083937F /* Sources */,
-				099BD49320811CE70083937F /* Frameworks */,
-				099BD49420811CE70083937F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				099BD49820811CE70083937F /* PBXTargetDependency */,
-			);
-			name = SilencePlayerUITests;
-			productName = SilencePlayerUITests;
-			productReference = 099BD49620811CE70083937F /* SilencePlayerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,14 +101,6 @@
 				TargetAttributes = {
 					099BD47820811CE40083937F = {
 						CreatedOnToolsVersion = 9.3;
-					};
-					099BD48A20811CE70083937F = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 099BD47820811CE40083937F;
-					};
-					099BD49520811CE70083937F = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 099BD47820811CE40083937F;
 					};
 				};
 			};
@@ -217,8 +118,6 @@
 			projectRoot = "";
 			targets = (
 				099BD47820811CE40083937F /* SilencePlayer */,
-				099BD48A20811CE70083937F /* SilencePlayerTests */,
-				099BD49520811CE70083937F /* SilencePlayerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,22 +127,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099BD4AB20812AD50083937F /* silence.mp3 in Resources */,
 				099BD48120811CE70083937F /* Assets.xcassets in Resources */,
 				099BD48420811CE70083937F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		099BD48920811CE70083937F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		099BD49420811CE70083937F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,40 +141,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				099BD47F20811CE50083937F /* ViewController.swift in Sources */,
+				099BD4A9208121540083937F /* SoundPlayer.swift in Sources */,
 				099BD47D20811CE40083937F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		099BD48720811CE70083937F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				099BD49020811CE70083937F /* SilencePlayerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		099BD49220811CE70083937F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				099BD49B20811CE70083937F /* SilencePlayerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		099BD48D20811CE70083937F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 099BD47820811CE40083937F /* SilencePlayer */;
-			targetProxy = 099BD48C20811CE70083937F /* PBXContainerItemProxy */;
-		};
-		099BD49820811CE70083937F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 099BD47820811CE40083937F /* SilencePlayer */;
-			targetProxy = 099BD49720811CE70083937F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		099BD48220811CE70083937F /* Main.storyboard */ = {
@@ -353,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -407,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -451,84 +309,6 @@
 			};
 			name = Release;
 		};
-		099BD4A320811CE70083937F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SilencePlayerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.vidartysse.SilencePlayerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilencePlayer.app/Contents/MacOS/SilencePlayer";
-			};
-			name = Debug;
-		};
-		099BD4A420811CE70083937F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SilencePlayerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.vidartysse.SilencePlayerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SilencePlayer.app/Contents/MacOS/SilencePlayer";
-			};
-			name = Release;
-		};
-		099BD4A620811CE70083937F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SilencePlayerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.vidartysse.SilencePlayerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = SilencePlayer;
-			};
-			name = Debug;
-		};
-		099BD4A720811CE70083937F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SilencePlayerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.vidartysse.SilencePlayerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = SilencePlayer;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -546,24 +326,6 @@
 			buildConfigurations = (
 				099BD4A020811CE70083937F /* Debug */,
 				099BD4A120811CE70083937F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		099BD4A220811CE70083937F /* Build configuration list for PBXNativeTarget "SilencePlayerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				099BD4A320811CE70083937F /* Debug */,
-				099BD4A420811CE70083937F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		099BD4A520811CE70083937F /* Build configuration list for PBXNativeTarget "SilencePlayerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				099BD4A620811CE70083937F /* Debug */,
-				099BD4A720811CE70083937F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
