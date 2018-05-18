@@ -12,7 +12,7 @@ Hopefully, SilencePlayer can solve similar situations with other audio gear.
 1. Drag the SilencePlayer app into your Applications folder.
 
 ## How to use
-Start SilencePlayer by running the app. In the dialog that appears, click **Play silence** to start audio playback. Click **Stop it** if you need to stop it. Hide the app if you don't want to see it (Press ⌘H).
+Start SilencePlayer. In the dialog that appears, click **Play silence** to start audio playback. Click **Stop it** if you need to stop it. Hide the app if you don't want to see it (Press ⌘H).
 
-Check **Play silence when app starts** to have SilencePlayer start audio playback automatically every time you start it. Consider adding SilencePlayer from your user's Login Items to have it run automatically when you log in to your Mac.
+Check **Play silence when app starts** to have SilencePlayer start audio playback automatically every time you start it. Consider adding the app to your user's Login Items to have it run automatically when you log in to your Mac.
 
