@@ -16,3 +16,6 @@ Start SilencePlayer. In the dialog that appears, click **Play silence** to start
 
 Check **Play silence when app starts** to have SilencePlayer start audio playback automatically every time you start it. Consider adding the app to your user's Login Items to have it run automatically when you log in to your Mac.
 
+
+## What it does
+Technically, SilencePlayer plays a 10-second mp3 file of silence, in a loop, forever / until you click **Stop it** or quit the application. Playback is done by *[AVAudioPlayer](https://developer.apple.com/documentation/avfoundation/avaudioplayer)*, with numberOfLoops = -1 to loop the mp3 file forever.
