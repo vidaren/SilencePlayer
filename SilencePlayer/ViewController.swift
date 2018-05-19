@@ -19,10 +19,10 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        PlayOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "PlayOnStartup");
-        HideOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "HideOnStartup");
+        PlayOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "PlayOnStartup")
+        HideOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "HideOnStartup")
         if (PlayOnStartupCheckbox.state == NSControl.StateValue.on) {
-            playButtonClicked(PlayButton);
+            playButtonClicked(PlayButton)
         }
         if (HideOnStartupCheckbox.state == NSControl.StateValue.on) {
             NSApplication.shared.hide(nil)
@@ -61,11 +61,11 @@ class ViewController: NSViewController {
     }
     
     private func getControlStateFromBoolDefault(keyName: String) -> NSControl.StateValue! {
-        return UserDefaults.standard.bool(forKey: keyName) ? NSControl.StateValue.on : NSControl.StateValue.off;
+        return UserDefaults.standard.bool(forKey: keyName) ? NSControl.StateValue.on : NSControl.StateValue.off
     }
     
     private func setBoolDefaultFromControlState(keyName: String, stateValue: NSControl.StateValue) {
-        UserDefaults.standard.set(stateValue == NSControl.StateValue.on, forKey: keyName);
+        UserDefaults.standard.set(stateValue == NSControl.StateValue.on, forKey: keyName)
     }
 }
 
