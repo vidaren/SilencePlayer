@@ -10,7 +10,7 @@ Hopefully, SilencePlayer can solve similar situations with other audio gear.
 
 
 ## How to install
-1. Download SilencePlayer.zip from the latest Release on Github.
+1. Download SilencePlayer.zip from the latest [Release on Github](https://github.com/vidaren/SilencePlayer/releases).
 1. Unpack the downloaded archive.
 1. Drag the SilencePlayer app into your Applications folder.
 

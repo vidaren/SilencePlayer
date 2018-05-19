@@ -13,6 +13,8 @@
 		099BD48420811CE70083937F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099BD48220811CE70083937F /* Main.storyboard */; };
 		099BD4A9208121540083937F /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BD4A8208121540083937F /* SoundPlayer.swift */; };
 		099BD4AB20812AD50083937F /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 099BD4AA20812AD40083937F /* silence.mp3 */; };
+		09FFC3D720B04107002A0D6B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 09FFC3D520B04107002A0D6B /* README.md */; };
+		09FFC3D820B04107002A0D6B /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09FFC3D620B04107002A0D6B /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		099BD48620811CE70083937F /* SilencePlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilencePlayer.entitlements; sourceTree = "<group>"; };
 		099BD4A8208121540083937F /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		099BD4AA20812AD40083937F /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		09FFC3D520B04107002A0D6B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		09FFC3D620B04107002A0D6B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 		099BD47020811CE40083937F = {
 			isa = PBXGroup;
 			children = (
+				09FFC3D620B04107002A0D6B /* LICENSE.txt */,
+				09FFC3D520B04107002A0D6B /* README.md */,
 				099BD4AA20812AD40083937F /* silence.mp3 */,
 				099BD47B20811CE40083937F /* SilencePlayer */,
 				099BD47A20811CE40083937F /* Products */,
@@ -129,6 +135,8 @@
 			files = (
 				099BD4AB20812AD50083937F /* silence.mp3 in Resources */,
 				099BD48120811CE70083937F /* Assets.xcassets in Resources */,
+				09FFC3D720B04107002A0D6B /* README.md in Resources */,
+				09FFC3D820B04107002A0D6B /* LICENSE.txt in Resources */,
 				099BD48420811CE70083937F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
