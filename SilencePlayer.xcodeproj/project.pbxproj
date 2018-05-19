@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0989D95520B06E5300C66285 /* SilencePlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0989D95420B06E5300C66285 /* SilencePlayer.png */; };
 		099BD47D20811CE40083937F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BD47C20811CE40083937F /* AppDelegate.swift */; };
 		099BD47F20811CE50083937F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099BD47E20811CE50083937F /* ViewController.swift */; };
 		099BD48120811CE70083937F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099BD48020811CE70083937F /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0989D95420B06E5300C66285 /* SilencePlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SilencePlayer.png; sourceTree = "<group>"; };
 		099BD47920811CE40083937F /* SilencePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilencePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099BD47C20811CE40083937F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099BD47E20811CE50083937F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		099BD47020811CE40083937F = {
 			isa = PBXGroup;
 			children = (
+				0989D95420B06E5300C66285 /* SilencePlayer.png */,
 				09FFC3D620B04107002A0D6B /* LICENSE.txt */,
 				09FFC3D520B04107002A0D6B /* README.md */,
 				099BD4AA20812AD40083937F /* silence.mp3 */,
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0989D95520B06E5300C66285 /* SilencePlayer.png in Resources */,
 				099BD4AB20812AD50083937F /* silence.mp3 in Resources */,
 				099BD48120811CE70083937F /* Assets.xcassets in Resources */,
 				09FFC3D720B04107002A0D6B /* README.md in Resources */,
