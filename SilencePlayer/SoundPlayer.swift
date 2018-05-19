@@ -18,7 +18,6 @@ class SoundPlayer: NSObject {
         do {
             _player = try AVAudioPlayer(contentsOf: url)
             guard let player = _player else { return }
-            
             player.numberOfLoops = -1   // Loop forever
             player.prepareToPlay()
             player.play()

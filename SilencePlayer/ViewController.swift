@@ -19,11 +19,13 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         PlayOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "PlayOnStartup")
-        HideOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "HideOnStartup")
         if (PlayOnStartupCheckbox.state == NSControl.StateValue.on) {
             playButtonClicked(PlayButton)
         }
+        
+        HideOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "HideOnStartup")
         if (HideOnStartupCheckbox.state == NSControl.StateValue.on) {
             NSApplication.shared.hide(nil)
         }
@@ -42,11 +44,10 @@ class ViewController: NSViewController {
         setBoolDefaultFromControlState(keyName: "HideOnStartup", stateValue: HideOnStartupCheckbox.state)
     }
     
-    @IBAction func playButtonClicked(_ sender: Any) {
+    @IBAction func playButtonClicked(_ sender: NSButton) {
         if (soundPlayer != nil) {
             if (soundPlayer!.stop()) {
-                let btn = sender as! NSButton
-                btn.title = "Play silence"
+                sender.title = "Play silence"
                 nowPlayingLabel.stringValue = "- - -"
                 return
             }
@@ -55,8 +56,7 @@ class ViewController: NSViewController {
             soundPlayer = SoundPlayer()
         }
         soundPlayer!.playSound(file: "silence", ext: "mp3")
-        let btn = sender as! NSButton
-        btn.title = "Stop it"
+        sender.title = "Stop it"
         nowPlayingLabel.stringValue = "Now playing silence"
     }
     
