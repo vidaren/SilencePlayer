@@ -26,4 +26,4 @@ Start Silence Player.  In the dialog that appears, click **Play silence** to sta
 
 
 ## What it does
-Technically, Silence Player plays a 10-second mp3 file of silence, in a loop, forever or until you click **Stop it** or quit the application.  Playback is done by [AVAudioPlayer](https://developer.apple.com/documentation/avfoundation/avaudioplayer), with [numberOfLoops = -1](/SilencePlayer/SoundPlayer.swift#L22) to loop the mp3 file forever.
+Technically, Silence Player plays a 10-second mp3 file of silence, in a loop, forever or until you click **Stop it** or quit the application.  Playback is done by [AVAudioPlayer](https://developer.apple.com/documentation/avfoundation/avaudioplayer), with [numberOfLoops = -1](/SilencePlayer/SoundPlayer.swift#L21) to loop the mp3 file forever.
