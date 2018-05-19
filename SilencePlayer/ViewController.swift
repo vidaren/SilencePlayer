@@ -13,16 +13,19 @@ var soundPlayer: SoundPlayer?
 class ViewController: NSViewController {
     
     @IBOutlet weak var nowPlayingLabel: NSTextField!
-    @IBOutlet weak var PlayOnStartupCheckbox: NSButton!
     @IBOutlet weak var PlayButton: NSButton!
+    @IBOutlet weak var PlayOnStartupCheckbox: NSButton!
+    @IBOutlet weak var HideOnStartupCheckbox: NSButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        PlayOnStartupCheckbox.state = UserDefaults.standard.bool(forKey: "PlayOnStartup")
-            ? NSControl.StateValue.on
-            : NSControl.StateValue.off;
+        PlayOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "PlayOnStartup");
+        HideOnStartupCheckbox.state = getControlStateFromBoolDefault(keyName: "HideOnStartup");
         if (PlayOnStartupCheckbox.state == NSControl.StateValue.on) {
             playButtonClicked(PlayButton);
+        }
+        if (HideOnStartupCheckbox.state == NSControl.StateValue.on) {
+            NSApplication.shared.hide(nil)
         }
     }
 
@@ -30,12 +33,15 @@ class ViewController: NSViewController {
         didSet {
         }
     }
-    
-    @IBAction func playOnStartupChanged(_ sender: NSButton) {
-        let isChecked : Bool = PlayOnStartupCheckbox.state == NSControl.StateValue.on;
-        UserDefaults.standard.set(isChecked, forKey: "PlayOnStartup");
-    }
 
+    @IBAction func playOnStartupChanged(_ sender: NSButton) {
+        setBoolDefaultFromControlState(keyName: "PlayOnStartup", stateValue: PlayOnStartupCheckbox.state)
+    }
+    
+    @IBAction func hideOnStartupChanged(_ sender: NSButton) {
+        setBoolDefaultFromControlState(keyName: "HideOnStartup", stateValue: HideOnStartupCheckbox.state)
+    }
+    
     @IBAction func playButtonClicked(_ sender: Any) {
         if (soundPlayer != nil) {
             if (soundPlayer!.stop()) {
@@ -52,6 +58,14 @@ class ViewController: NSViewController {
         let btn = sender as! NSButton
         btn.title = "Stop it"
         nowPlayingLabel.stringValue = "Now playing silence"
+    }
+    
+    private func getControlStateFromBoolDefault(keyName: String) -> NSControl.StateValue! {
+        return UserDefaults.standard.bool(forKey: keyName) ? NSControl.StateValue.on : NSControl.StateValue.off;
+    }
+    
+    private func setBoolDefaultFromControlState(keyName: String, stateValue: NSControl.StateValue) {
+        UserDefaults.standard.set(stateValue == NSControl.StateValue.on, forKey: keyName);
     }
 }
 

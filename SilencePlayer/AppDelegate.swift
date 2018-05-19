@@ -15,6 +15,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        UserDefaults.standard.register(defaults: [
+            "PlayOnStartup" : false,
+            "HideOnStartup" : false
+        ])
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
