@@ -27,8 +27,8 @@ class SoundPlayer: NSObject {
     }
     
     func stop() -> Bool {
-        if (_player != nil) {
-            if (_player!.isPlaying) {
+        if _player != nil {
+            if _player!.isPlaying {
                 _player!.stop()
                 return true
             }
